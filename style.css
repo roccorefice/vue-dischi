@@ -39,10 +39,10 @@ header img {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    flex-basis: 200px;
+    flex-basis: 220px;
     padding: 20px;
     margin: 10px 20px;
-    height: 360px;
+    height: 400px;
     background: rgb(46, 58, 70);
     text-align: center;
 }
@@ -65,4 +65,20 @@ header img {
 
 .cd span.year {
     color: grey;
+}
+
+
+
+
+
+
+@media screen and (max-width: 993px){
+    .cd{
+        flex-basis: 30%;
+        height: 280px;
+
+    }
+    .cd img {
+        max-width: 40%;
+    }
 }

@@ -18,8 +18,9 @@ let app = new Vue ({
 		.then(response => {
 			dischi  = response.data.response;
 			for (let i = 0; i < dischi.length; i++) {
-				this.albums.push(dischi[i])				
+				this.albums.push(dischi[i])	
 			}
+			console.log(this.albums);			
 		});
 	}
 })
