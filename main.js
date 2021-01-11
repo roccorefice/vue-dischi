@@ -10,15 +10,16 @@
 let app = new Vue ({
 	el:"#app",
 	data:{
-		dischi:[],
+		albums:[],
 	},
 	mounted(){
 		axios
 		.get('https://flynn.boolean.careers/exercises/api/array/music')
 		.then(response => {
-			dischi =  response.data.response;
-			// this.dischi.push(dischi);
-			console.log(dischi);
+			dischi  = response.data.response;
+			for (let i = 0; i < dischi.length; i++) {
+				this.albums.push(dischi[i])				
+			}
 		});
 	}
 })
